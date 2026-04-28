@@ -1,0 +1,19 @@
+Chart,Category,Value
+Rental Income,Apartments,135000
+Rental Income,Commercial,42000
+Rental Income,Garages/Parking,22500
+Rental Income,Storage,15000
+Cost Distribution,Personnel,19500
+Cost Distribution,Maintenance,12000
+Cost Distribution,Insurance,5900
+Cost Distribution,Energy,13800
+Cost Distribution,IT & Admin,2100
+Cost Distribution,Other,4500
+Contract Types,Permanent Contracts,112
+Contract Types,Fixed-Term Contracts,18
+Contract Types,Commercial Leases,22
+Contract Types,Short-Term Rental,5
+Ticket Status,Completed,280
+Ticket Status,In Progress,15
+Ticket Status,Open,4
+Ticket Status,Escalated,0
