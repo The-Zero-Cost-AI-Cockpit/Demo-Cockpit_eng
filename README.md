@@ -4,7 +4,7 @@
 This cockpit serves as the "digital nervous system" for professional real estate management. It centralizes key performance indicators, business processes, and technical dependencies into a single, local, high-performance interface.
 
 ## Key Features
-- **Live Dashboard**: Real-time display of critical metrics including 142 managed units, €184k monthly rental income, and a 96.5% occupancy rate.
+- **Dashboard**: Displays static demo metrics (142 managed units, €184k monthly rental income, 96.5% occupancy rate). CSV/XLSX import updates the four doughnut charts and the units/income/open-ticket KPI cards; the occupancy rate remains a static demo value.
 - **BPMN Processes**: Standardized workflows for property leasing and maintenance ticket management, visualized via Mermaid.js. The leasing process is optimized for horizontal viewing (2400px width), while maintenance tickets are presented in a compact vertical flow.
 - **C4 Architecture Model**: A comprehensive map of the digital infrastructure, illustrating the connections between the Admin Backend, the Tenant Portal, and external systems like DATEV and the Schufa API.
 - **Financial Analysis**: A detailed breakdown of fixed costs (e.g., maintenance, insurance, energy) including a Sankey diagram that visualizes the flow of expenses per building.
@@ -19,9 +19,10 @@ This cockpit serves as the "digital nervous system" for professional real estate
 - **Content Delivery Networks (CDN)**: All required libraries are loaded via CDN to ensure the cockpit remains a lightweight, single-file solution without local installation requirements.
 
 ## Setup and Usage
-1. **Local Access**: Simply open the `cockpit.html` file in any modern web browser.
+1. **Local Access**: Open `index.html` in any modern web browser.
 2. **Connectivity**: An active internet connection is required to fetch the visualization libraries via CDN.
 3. **Navigation**: Use the horizontal tab-based navigation to switch between modules without reloading the page.
+4. **CSV/XLSX Import** (Doughnut Charts tab): Expected CSV columns are `Chart,Category,Value` (English) or `Diagramm,Kategorie,Wert` (German). Supported diagram values are `Rental Income`/`Mieteinnahmen`, `Cost Distribution`/`Kostenverteilung`, `Contract Types`/`Vertragsarten` and `Ticket Status`/`Ticket-Status`. Invalid headers, empty files, unknown categories and negative values are rejected without changing the existing charts.
 
 ## Privacy and Control
 In line with the "0-Euro-Cockpit" philosophy, all sensitive data remains local and under the user's control. This architecture ensures maximum data privacy while maintaining professional-grade analytical capabilities.
